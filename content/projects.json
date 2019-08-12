@@ -1,0 +1,22 @@
+[
+  {
+    "type": "Authored",
+    "repos": [
+      {
+        "url": "https://github.com/grikomsn/murf",
+        "name": "murf",
+        "description": "Metacritic Movie user review fetcher"
+      }
+    ]
+  },
+  {
+    "type": "Contributed",
+    "repos": [
+      {
+        "url": "https://github.com/ryanflorence/gatsby-source-firebase",
+        "name": "gatsby-source-firebase",
+        "description": "Gatsby plugin to turn Firebase into a Gatsby data source"
+      }
+    ]
+  }
+]
