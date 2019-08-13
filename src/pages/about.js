@@ -36,10 +36,16 @@ const About = ({ data }) => (
       <p>
         Sometimes, I try to stay at some places and earn experiences from
         companies and agencies. My first developer job was at{' '}
-        <Link href="https://cansii.com/">Cansii</Link> back in 2013. Then I went
-        to Japan for a whole year and found in love with this country. Back to
-        France, I worked for a press and digital advertising company called{' '}
-        <Link href="https://www.prodigious.com/our_services/prodigiouscloud/">
+        <Link style={{ color: 'var(--textLink)' }} href="https://cansii.com/">
+          Cansii
+        </Link>{' '}
+        back in 2013. Then I went to Japan for a whole year and found in love
+        with this country. Back to France, I worked for a press and digital
+        advertising company called{' '}
+        <Link
+          style={{ color: 'var(--textLink)' }}
+          href="https://www.prodigious.com/our_services/prodigiouscloud/"
+        >
           Prodigious
         </Link>
         . In 2018, I flewed to Autralia and southern asia.
@@ -53,8 +59,13 @@ const About = ({ data }) => (
       </p>
       <p>
         For any assigment, you can reach me on{' '}
-        <Email to="trvd.protonmail.com" /> or for private matters:{' '}
-        <Email to="reveillard.theo@gmail.com" />.
+        <Email style={{ color: 'var(--textLink)' }} to="trvd.protonmail.com" />{' '}
+        or for private matters:{' '}
+        <Email
+          style={{ color: 'var(--textLink)' }}
+          to="reveillard.theo@gmail.com"
+        />
+        .
       </p>
       <div className="has-text-centered"></div>
     </Section>

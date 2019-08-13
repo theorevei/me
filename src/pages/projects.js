@@ -27,7 +27,10 @@ const Projects = ({ data }) => (
           <ul>
             {node.repos.map(({ name, description, url }) => (
               <li key={name}>
-                <Link href={url}>{name}</Link> - {description}
+                <Link href={url} style={{ color: 'var(--textLink)' }}>
+                  {name}
+                </Link>{' '}
+                - {description}
               </li>
             ))}
           </ul>

@@ -6,7 +6,7 @@
 
 // Custom Rules
 ::selection {
-    background-color: $yellow;
+    background-color: rgba(163, 114, 57, 0.562);
 }
 
 html,
@@ -19,7 +19,7 @@ body {
     --bg: white;
     --textNormal: #222;
     --textTitle: #222;
-    --textLink: blue;
+    --textLink: #4a4a4a;
     --hr: hsla(0, 0%, 0%, 0.2);
   
     background-color: var(--bg);
@@ -28,10 +28,10 @@ body {
 body.dark {
     -webkit-font-smoothing: antialiased;
   
-    --bg: rgb(0, 0, 0);
-    --textNormal: rgb(255, 255, 255) !important;
-    --textTitle: white !important;
-    --textLink: yellow !important;
+    --bg: #121212;
+    --textNormal: rgba(255, 255, 255, 0.671) !important;
+    --textTitle: rgba(255, 255, 255, 0.726) !important;
+    --textLink: rgb(255, 255, 255) !important;
     --hr: hsla(0, 0%, 100%, 0.2) !important;
   }
 

@@ -78,30 +78,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-i18n',
-      options: {
-        langKeyDefault: 'en',
-        useLangKeyLayout: false,
-        markdownRemark: {
-          postPage: 'src/templates/blog-post.js',
-          query: `
-            {
-              allMarkdownRemark {
-                edges {
-                  node {
-                    fields {
-                      slug,
-                      langKey
-                    }
-                  }
-                }
-              }
-            }
-          `,
-        },
-      },
-    },
     // Last-priority Plugins
     {
       resolve: 'gatsby-plugin-purgecss',

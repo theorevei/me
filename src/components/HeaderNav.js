@@ -85,7 +85,7 @@ const HeaderNav = () => {
                   <label className="navbar-item">
                     <input
                       type="checkbox"
-                      style={{opacity:0}}
+                      style={{ opacity: 0 }}
                       onChange={e =>
                         toggleTheme(e.target.checked ? 'dark' : 'light')
                       }

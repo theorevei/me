@@ -32,14 +32,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark.frontmatter
   const { previous, next } = pageContext
 
-  const disqusProps = {
-    shortname: social.disqus,
-    config: {
-      title: post.title,
-      identifier: location.pathname,
-      url: siteUrl + location.pathname,
-    },
-  }
+  // const disqusProps = {
+  //   shortname: social.disqus,
+  //   config: {
+  //     title: post.title,
+  //     identifier: location.pathname,
+  //     url: siteUrl + location.pathname,
+  //   },
+  // }
 
   const btnClass = 'button remove-animation'
 
@@ -53,8 +53,12 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     >
       <Head pageTitle={post.title} siteDescription={post.spoiler} />
       <Section className="content">
-        <h1 className="title is-spaced">{post.title}</h1>
-        <p className="subtitle">{post.spoiler}</p>
+        <h1 className="title is-spaced" style={{ color: 'var(--textTitle)' }}>
+          {post.title}
+        </h1>
+        <p className="subtitle" style={{ color: 'var(--textTitle)' }}>
+          {post.spoiler}
+        </p>
         <small>Published on {parsePostDate(post.date)}</small>
         <hr />
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
