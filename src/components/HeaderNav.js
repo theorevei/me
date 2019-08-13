@@ -4,6 +4,9 @@ import { graphql, Link, StaticQuery } from 'gatsby'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+//const [darkTheme, setDarkTheme] = useState(false)
+
 const Logo = styled.span`
   margin-right: 1rem;
   font-family: 'Dr Sugiyama', cursive;
@@ -77,6 +80,21 @@ const HeaderNav = () => {
                   {name}
                 </Link>
               ))}
+              <ThemeToggler>
+                {({ theme, toggleTheme }) => (
+                  <label className="navbar-item">
+                    <input
+                      type="checkbox"
+                      style={{opacity:0}}
+                      onChange={e =>
+                        toggleTheme(e.target.checked ? 'dark' : 'light')
+                      }
+                      checked={theme === 'dark'}
+                    />{' '}
+                    <i className="e1a-stars" />
+                  </label>
+                )}
+              </ThemeToggler>
             </div>
           </div>
           <div className="navbar-padding" />

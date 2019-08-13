@@ -17,7 +17,13 @@ const Sig = styled(Img)`
 
 // eslint-disable-next-line react/prop-types
 const About = ({ data }) => (
-  <Layout>
+  <Layout
+    style={{
+      transition: 'color 0.2s ease-out, background 0.2s ease-out',
+      backgroundColor: 'var(--bg)',
+      color: 'var(--textNormal)',
+    }}
+  >
     <Head pageTitle="About" />
     <Section className="content">
       <h1 className="title">
@@ -25,7 +31,7 @@ const About = ({ data }) => (
       </h1>
       <p>
         I was born in Valence in France, but I tend to be in a lot of difference
-        place around the world.
+        places around the world.
       </p>
       <p>
         Sometimes, I try to stay at some places and earn experiences from

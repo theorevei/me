@@ -1,6 +1,6 @@
 import 'prism-theme-ainami-dark/prism-bulma.min.css'
 
-import { DiscussionEmbed } from 'disqus-react'
+//import { DiscussionEmbed } from 'disqus-react'
 import { graphql, Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
@@ -44,7 +44,13 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const btnClass = 'button remove-animation'
 
   return (
-    <Layout>
+    <Layout
+      style={{
+        transition: 'color 0.2s ease-out, background 0.2s ease-out',
+        backgroundColor: 'var(--bg)',
+        color: 'var(--textNormal)',
+      }}
+    >
       <Head pageTitle={post.title} siteDescription={post.spoiler} />
       <Section className="content">
         <h1 className="title is-spaced">{post.title}</h1>
@@ -68,7 +74,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </Buttons>
         )}
         <br />
-        <DiscussionEmbed {...disqusProps} />
+        {/* <DiscussionEmbed {...disqusProps} /> */}
       </Section>
     </Layout>
   )

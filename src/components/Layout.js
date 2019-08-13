@@ -26,7 +26,6 @@ const Layout = ({ children, hideFooter, ...props }) => (
       <main>{children}</main>
       {!hideFooter && <Footer />}
     </LayoutWrapper>
-    <Line />
   </>
 )
 

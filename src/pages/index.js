@@ -1,12 +1,16 @@
 /* eslint-disable react/prop-types */
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 import Email from '../components/Email'
 import Layout from '../components/Layout'
-import LogoSVG from '../images/SVGlogo.svg'
+import LogoSVG from '../images/SVGLogo.svg'
+
+//import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+
+//const [darkTheme, setDarkTheme] = useState(false)
 
 const Logo = styled.div`
   cursor: pointer;
@@ -81,20 +85,22 @@ const Container = ({ children }) => (
 )
 
 const Index = ({ data }) => (
-  <Layout hideFooter>
+  <Layout
+    hideFooter
+    style={{
+      backgroundColor: 'var(--bg)',
+      color: 'var(--textNormal)',
+      transition: 'color 0.2s ease-out, background 0.2s ease-out',
+    }}
+  >
     <Container>
       <figure className="image">
-        {/* <Logo
-          style={{ overflow: 'inherit' }}
-          fluid={data.img.childImageSharp.fluid}
-        /> */}
         <Logo>
           <div>
             <img style={{ borderRadius: '50%' }} src={LogoSVG} alt="logo" />
           </div>
         </Logo>
       </figure>
-      <br />
     </Container>
   </Layout>
 )

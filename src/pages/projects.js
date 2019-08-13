@@ -8,7 +8,13 @@ import Link from '../components/Link'
 import Section from '../components/Section'
 
 const Projects = ({ data }) => (
-  <Layout>
+  <Layout
+    style={{
+      transition: 'color 0.2s ease-out, background 0.2s ease-out',
+      backgroundColor: 'var(--bg)',
+      color: 'var(--textNormal)',
+    }}
+  >
     <Head pageTitle="Open Source" />
     <Section className="content">
       <h1 className="title">
@@ -18,7 +24,6 @@ const Projects = ({ data }) => (
       <br />
       {data.repos.edges.map(({ node }) => (
         <React.Fragment key={node.type}>
-          <h6>{node.type}</h6>
           <ul>
             {node.repos.map(({ name, description, url }) => (
               <li key={name}>

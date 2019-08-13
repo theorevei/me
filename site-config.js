@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  siteTitle: 'theo-personnal-website',
+  siteTitle: 'Théo Réveillard',
   siteTitleShort: 'TR',
   siteDescription: 'Full stack developer from France',
   siteUrl: 'https://trvd.fr',

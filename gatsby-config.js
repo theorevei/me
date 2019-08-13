@@ -31,6 +31,7 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-webpack-size',
     'gatsby-transformer-json',
+    'gatsby-plugin-dark-mode',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-offline',
@@ -75,6 +76,30 @@ module.exports = {
       options: {
         name: 'images',
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'en',
+        useLangKeyLayout: false,
+        markdownRemark: {
+          postPage: 'src/templates/blog-post.js',
+          query: `
+            {
+              allMarkdownRemark {
+                edges {
+                  node {
+                    fields {
+                      slug,
+                      langKey
+                    }
+                  }
+                }
+              }
+            }
+          `,
+        },
       },
     },
     // Last-priority Plugins

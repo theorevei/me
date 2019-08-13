@@ -16,13 +16,19 @@ const Blog = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.map(({ node }) => node)
 
   return (
-    <Layout>
+    <Layout
+      style={{
+        backgroundColor: 'var(--bg)',
+        color: 'var(--textNormal)',
+        transition: 'color 0.2s ease-out, background 0.2s ease-out',
+      }}
+    >
       <Head pageTitle="Blog" />
       <Section className="content">
         <h1 className="title">
           <i className="e1a-pencil" />
         </h1>
-        <p>Posts about the programming-verse and various interesting things</p>
+        <p>Blog about web developpement and related lifestyle</p>
         <br />
         {posts.map(({ fields, frontmatter }) => (
           <Link

@@ -3,19 +3,19 @@
     "type": "Authored",
     "repos": [
       {
-        "url": "https://github.com/grikomsn/murf",
-        "name": "murf",
-        "description": "Metacritic Movie user review fetcher"
-      }
-    ]
-  },
-  {
-    "type": "Contributed",
-    "repos": [
+        "url": "https://github.com/theorevei/meteo-game",
+        "name": "Meteo game",
+        "description": "Practicing react context and API fetching"
+      },
       {
-        "url": "https://github.com/ryanflorence/gatsby-source-firebase",
-        "name": "gatsby-source-firebase",
-        "description": "Gatsby plugin to turn Firebase into a Gatsby data source"
+        "url": "https://github.com/theorevei/",
+        "name": "Bathing API",
+        "description": "API about bathing spots and water quality throughout Europe (source: European Commision) - in construction"
+      },
+      {
+        "url": "https://github.com/theorevei/",
+        "name": "Bathing near me",
+        "description": "Best bathing places near my location or by location according to quality of water - in construction"
       }
     ]
   }
