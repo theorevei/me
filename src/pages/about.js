@@ -29,9 +29,12 @@ const About = ({ data }) => (
       <h1 className="title">
         <i className="e1a-wave_tone1" />
       </h1>
-      <h6 className="title is-size-6	">
+      <h6 className="title is-size-6" style={{ color: 'var(--textTitle)' }}>
         You can find my CV{' '}
-        <a href="https://drive.google.com/open?id=1Cl3eyUWbW6EZB5S-mzl0NW8H1k-e9dJr">
+        <a
+          href="https://drive.google.com/open?id=1Cl3eyUWbW6EZB5S-mzl0NW8H1k-e9dJr"
+          style={{ color: 'var(--textLink)' }}
+        >
           in french here
         </a>
       </h6>
