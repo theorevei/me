@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# My portfolio V 1.O
+# Portfolio / blog de Théo Réveillard
 
 Based on the gatsby starter [fabe/gatsby-universal](https://github.com/fabe/gatsby-universal).
 
