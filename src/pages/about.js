@@ -29,6 +29,12 @@ const About = ({ data }) => (
       <h1 className="title">
         <i className="e1a-wave_tone1" />
       </h1>
+      <h6 className="title is-size-6	">
+        You can find my CV{' '}
+        <a href="https://drive.google.com/open?id=1Cl3eyUWbW6EZB5S-mzl0NW8H1k-e9dJr">
+          in french here
+        </a>
+      </h6>
       <p>
         I was born in Valence, France, but I’ve been a lot of different places
         around the world.
@@ -73,15 +79,3 @@ const About = ({ data }) => (
 )
 
 export default About
-
-export const query = graphql`
-  {
-    sig: file(relativePath: { eq: "Signature.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
-    }
-  }
-`

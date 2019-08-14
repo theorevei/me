@@ -6,7 +6,7 @@ import styled from 'styled-components'
 
 import Email from '../components/Email'
 import Layout from '../components/Layout'
-import LogoSVG from '../images/SVGLogo.svg'
+import LogoSVG from '../images/logo.svg'
 
 const Logo = styled.div`
   cursor: pointer;
