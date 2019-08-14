@@ -13,10 +13,6 @@ const Links = ({ data }) => (
     <Head pageTitle="Links" />
     <Section className="content">
       <h1 className="title">Social Links</h1>
-      <p>
-        Here is a list of various social medias and alternate links (e.g.{' '}
-        <Link href="https://griko.dev/github">griko.dev/github</Link>)
-      </p>
       <br />
       {data.links.edges.map(({ node }) => (
         <React.Fragment key={node.name}>

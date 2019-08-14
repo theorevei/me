@@ -8,10 +8,6 @@ import Email from '../components/Email'
 import Layout from '../components/Layout'
 import LogoSVG from '../images/SVGLogo.svg'
 
-//import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-
-//const [darkTheme, setDarkTheme] = useState(false)
-
 const Logo = styled.div`
   cursor: pointer;
   filter: drop-shadow(0 6px 3px rgba(0, 0, 0, 0.3));

@@ -5,7 +5,6 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-//const [darkTheme, setDarkTheme] = useState(false)
 
 const Logo = styled.span`
   margin-right: 1rem;
@@ -14,7 +13,7 @@ const Logo = styled.span`
 
 const routes = [
   { name: 'About', route: '/about' },
-  { name: 'Projects', route: '/projects' }, ///open-source
+  { name: 'Projects', route: '/projects' },
   { name: 'Blog', route: '/blog' },
 ]
 

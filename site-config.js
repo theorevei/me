@@ -2,8 +2,8 @@ const path = require('path')
 
 module.exports = {
   siteTitle: 'Théo Réveillard',
-  siteTitleShort: 'TR',
-  siteDescription: 'Full stack developer from France',
+  siteTitleShort: 'trvd',
+  siteDescription: 'Sotftware engineer from France',
   siteUrl: 'https://trvd.fr',
   themeColor: '#f8f88f',
   backgroundColor: '#f8f88f',
