@@ -14,7 +14,7 @@ const Logo = styled.span`
 const routes = [
   { name: 'About', route: '/about' },
   { name: 'Projects', route: '/projects' },
-  { name: 'Blog', route: '/blog' },
+  { name: 'Contact', route: '/contact' },
 ]
 
 const HeaderNav = () => {
@@ -37,8 +37,6 @@ const HeaderNav = () => {
           <Logo>
             <span>TR.</span>
           </Logo>
-          &nbsp;
-          <b>Théo Réveillard</b>
         </Link>
         <a
           role="button"
@@ -61,6 +59,7 @@ const HeaderNav = () => {
               className="navbar-item"
               key={name}
               activeClassName="is-active"
+              style={{ color: 'var(--textTitle)' }}
             >
               {name}
             </Link>

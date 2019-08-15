@@ -17,8 +17,8 @@ const Projects = ({ data }) => (
   >
     <Head pageTitle="Open Source" />
     <Section className="content">
-      <h1 className="title">
-        <i className="e1a-sparkles" />
+      <h1 className="title" style={{ color: 'var(--textTitle)' }}>
+        Projects
       </h1>
       <p>Here are some projects I authored</p>
       <br />

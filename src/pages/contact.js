@@ -9,19 +9,27 @@ import trimProtocol from '../helpers/trimProtocol'
 
 // eslint-disable-next-line react/prop-types
 const Links = ({ data }) => (
-  <Layout>
+  <Layout
+    style={{
+      backgroundColor: 'var(--bg)',
+      color: 'var(--textNormal)',
+      transition: 'color 0.2s ease-out, background 0.2s ease-out',
+    }}
+  >
     <Head pageTitle="Links" />
     <Section className="content">
-      <h1 className="title">Social Links</h1>
+      <h1 className="title" style={{'color': 'var(--textTitle)'}}>Contact</h1>
       <br />
       {data.links.edges.map(({ node }) => (
         <React.Fragment key={node.name}>
-          <h6>{node.name}</h6>
+          <h6 style={{'color': 'var(--textTitle)'}}>{node.name}</h6>
           <ul>
             {node.links.sort().map(({ link, description }) => (
               <li key={link}>
                 {description && <span>{description} - </span>}
-                <Link href={link}>{trimProtocol(link)}</Link>
+                <Link href={link} style={{ color: 'var(--textLink)' }}>
+                  {trimProtocol(link)}
+                </Link>
               </li>
             ))}
           </ul>
@@ -35,7 +43,7 @@ export default Links
 
 export const query = graphql`
   {
-    links: allSocialsJson {
+    links: allContactJson {
       edges {
         node {
           name
