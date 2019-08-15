@@ -1,10 +1,7 @@
 /* eslint-disable react/prop-types */
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
-import Email from '../components/Email'
 import Layout from '../components/Layout'
 import LogoSVG from '../images/logo.svg'
 
@@ -80,7 +77,7 @@ const Container = ({ children }) => (
   </section>
 )
 
-const Index = ({ data }) => (
+const Index = () => (
   <Layout
     hideFooter
     style={{
@@ -102,15 +99,3 @@ const Index = ({ data }) => (
 )
 
 export default Index
-
-export const query = graphql`
-  {
-    img: file(relativePath: { eq: "test.svg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`

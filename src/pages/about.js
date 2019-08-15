@@ -1,4 +1,3 @@
-import { graphql, Link as GatsbyLink } from 'gatsby'
 import Img from 'gatsby-image'
 import React from 'react'
 import styled from 'styled-components'
@@ -9,19 +8,13 @@ import Layout from '../components/Layout'
 import Link from '../components/Link'
 import Section from '../components/Section'
 
-const Sig = styled(Img)`
-  margin: auto;
-  margin-top: 2rem;
-  max-width: 128px;
-`
-
 // eslint-disable-next-line react/prop-types
 const About = ({ data }) => (
   <Layout
     style={{
-      transition: 'color 0.2s ease-out, background 0.2s ease-out',
       backgroundColor: 'var(--bg)',
       color: 'var(--textNormal)',
+      transition: 'color 0.2s ease-out, background 0.2s ease-out',
     }}
   >
     <Head pageTitle="About" />

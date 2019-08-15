@@ -10,9 +10,9 @@ import Section from '../components/Section'
 const Projects = ({ data }) => (
   <Layout
     style={{
-      transition: 'color 0.2s ease-out, background 0.2s ease-out',
       backgroundColor: 'var(--bg)',
       color: 'var(--textNormal)',
+      transition: 'color 0.2s ease-out, background 0.2s ease-out',
     }}
   >
     <Head pageTitle="Open Source" />
