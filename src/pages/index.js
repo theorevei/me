@@ -5,7 +5,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
-import LogoSVG from '../images/logo.svg'
 
 const Logo = styled(Img)`
   overflow: visible !important;
