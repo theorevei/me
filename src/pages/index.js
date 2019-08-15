@@ -1,11 +1,14 @@
 /* eslint-disable react/prop-types */
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import React from 'react'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import LogoSVG from '../images/logo.svg'
 
-const Logo = styled.div`
+const Logo = styled(Img)`
+  overflow: visible !important;
   cursor: pointer;
   filter: drop-shadow(0 6px 3px rgba(0, 0, 0, 0.3));
   margin: auto;
@@ -77,7 +80,7 @@ const Container = ({ children }) => (
   </section>
 )
 
-const Index = () => (
+const Index = ({ data }) => (
   <Layout
     hideFooter
     style={{
@@ -88,14 +91,24 @@ const Index = () => (
   >
     <Container>
       <figure className="image">
-        <Logo>
-          <div>
-            <img style={{ borderRadius: '50%' }} src={LogoSVG} alt="logo" />
-          </div>
-        </Logo>
+        <div>
+          <Logo fluid={data.img.childImageSharp.fluid} alt="logo" />
+        </div>
       </figure>
     </Container>
   </Layout>
 )
 
 export default Index
+
+export const query = graphql`
+  {
+    img: file(relativePath: { eq: "logo.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
