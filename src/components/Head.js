@@ -26,7 +26,10 @@ const Head = ({
       content="width=device-width,initial-scale=1.0,user-scalable=yes"
       name="viewport"
     />
-
+    <meta
+      name="google-site-verification"
+      content="OHDsd1mhcGQKsCnXmNC5m9-zMXnAJrGpCrwykRKXdLU"
+    />
     <meta content={siteTitle} name="apple-mobile-web-app-title" />
     <meta content={pageTitleFull} property="og:title" />
     <meta content={pageTitleFull} name="twitter:title" />
