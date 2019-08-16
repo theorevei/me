@@ -42,7 +42,7 @@ const About = ({ data }) => (
           Cansii
         </Link>{' '}
         back in 2013. Then I went to Japan for a whole year and immediately fell
-        in love with this country. Back to France, I worked for a press and
+        in love with this country. Back in France, I worked for a press and
         digital advertising company named{' '}
         <Link
           style={{ color: 'var(--textLink)' }}
@@ -50,14 +50,14 @@ const About = ({ data }) => (
         >
           Prodigious
         </Link>
-        . Then in 2018 I flewed to Autralia and southern asia later on.
+        . In 2018 I flewed to Autralia and southern asia later on.
       </p>
       <p>
         June 2019 has undoubtedly been a turning point for me: I would like to
-        focus on and contribute to the world of open source. And since then,
-        I’ve enjoyed working with web technologies such as React, Gatsby,
-        NodeJS. I also like working with design technologies such as threeJS,
-        CSS Animations and Adobe Editing Softwares.
+        focus more on web development. Since then, I’ve enjoyed working with
+        technologies such as React, Gatsby, NodeJS. I also like playing with
+        design tools and librairies such as threeJS, CSS Animations and Adobe
+        Editing Softwares.
       </p>
       <p>
         For any assigment, you can reach me on{' '}
