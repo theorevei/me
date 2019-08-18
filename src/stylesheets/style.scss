@@ -54,6 +54,10 @@ a {
     background-size: 0% 2px;
     transition: background-size .3s, background-color .3s;
 
+    &:hover{
+        color:black !important;
+    }
+
 }
 
 a:hover:not(.remove-animation), a:focus:not(.remove-animation) {

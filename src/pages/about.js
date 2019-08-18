@@ -20,6 +20,7 @@ const About = ({ data }) => (
     <Head pageTitle="About" />
     <Section className="content">
       <h1 className="title">
+        Hi, bonjour, こんにちは, I'm Théo Réveillard{' '}
         <i className="e1a-wave_tone1" />
       </h1>
       <h6 className="title is-size-6" style={{ color: 'var(--textTitle)' }}>
