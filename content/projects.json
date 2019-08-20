@@ -8,11 +8,6 @@
         "description": "Practicing react context and API fetching"
       },
       {
-        "url": "https://github.com/theorevei/nicolasreveillard",
-        "name": "Nicolas Réveillard",
-        "description": "Website of the french artist: Nicolas Réveillard"
-      },
-      {
         "url": "https://github.com/theorevei/",
         "name": "Bathing API",
         "description": "API about bathing spots and water quality throughout Europe (source: European Commision) - in construction"
