@@ -3,6 +3,11 @@
     "type": "Authored",
     "repos": [
       {
+        "url": "https://nicolasreveillard.fr",
+        "name": "French artist",
+        "description": "A showcase website for a contemporary and portrait maker artist from Valence, France"
+      },
+      {
         "url": "https://github.com/theorevei/meteo-game",
         "name": "Meteo game",
         "description": "Practicing react context and API fetching"
