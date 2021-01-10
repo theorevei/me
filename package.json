@@ -13,7 +13,8 @@
     "build:favicons": "node scripts/favicons",
     "build": "yarn build:dir && yarn build:favicons && gatsby build",
     "now-build": "yarn build",
-    "test": "ava **/*.test.js --verbose"
+    "test": "ava **/*.test.js --verbose",
+    "git": "git add . && git commit -m 'update' && git push -u origin master"
   },
   "greenkeeper": {
     "ignore": [
