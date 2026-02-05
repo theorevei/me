@@ -50,7 +50,7 @@
     "gatsby-transformer-json": "^2.2.0",
     "gatsby-transformer-remark": "^2.5.0",
     "gatsby-transformer-sharp": "^2.2.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^9.0.0",
     "prism-theme-ainami-dark": "^1.0.2",
     "prismjs": "^1.16.0",
     "prop-types": "^15.7.2",
@@ -79,7 +79,7 @@
     "gatsby-plugin-eslint": "^2.0.5",
     "lighthouse": "^5.1.0",
     "mkdirp": "^0.5.1",
-    "node-gyp": "^4.0.0",
+    "node-gyp": "^12.2.0",
     "prettier": "^1.18.2"
   },
   "private": true,
